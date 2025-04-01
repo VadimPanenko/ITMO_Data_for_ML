@@ -1,0 +1,9 @@
+requests==2.31.0
+beautifulsoup4==4.12.2
+pandas==2.1.4
+matplotlib==3.8.2
+seaborn==0.13.0
+fake-useragent==2.1.0
+scikit-learn==1.4.0
+scipy==1.11.4
+missingno==0.5.2 
