@@ -72,26 +72,36 @@
 
 ```
 ITMO_Data_for_ML/
-├── data/               # Собранные данные
-│   ├── combined_dataset_*.csv     # Объединенный набор данных
-│   ├── hh_api_data_trimmed_*.json # Данные с HeadHunter
-│   └── avito_api_data_*.json      # Данные с Авито
+├── data/                                    # Собранные данные
+│   ├── avito_api_data_20250401_215353.json      # Данные с Авито
+│   ├── combined_dataset_20250401_220744.csv     # Объединенный набор данных
+│   ├── hh_api_data_trimmed_20250401_214613.json # Данные с HeadHunter
+│   └── README.md                                # Краткое описание
 │
-├── analysis/           # Результаты анализа и визуализации
-│   ├── statistics.json            # Общая статистика по вакансиям
-│   ├── method_comparison.csv      # Сравнение методов обработки
-│   ├── missing_values_*.png       # Визуализация пропусков
-│   └── salary_outliers_*.png      # Визуализация выбросов
+├── analysis/                                # Результаты анализа и визуализации
+│   ├── avg_salary_by_profession.png             # График средней зарплаты по профессиям
+│   ├── avg_salary_by_profession_and_source.png  # График средней зарплаты по профессиям и источникам
+│   ├── avg_salary_by_region.png                 # График средней зарплаты по регионам
+│   ├── data_processing_recommendations.txt      # Рекомендации по обработке данных
+│   ├── method_comparison.csv                    # Сравнение методов обработки
+│   ├── missing_values_heatmap.png               # Тепловая карта пропущенных значений
+│   ├── missing_values_matrix.png                # Матрица пропущенных значений
+│   ├── salary_distribution.png                  # Распределение зарплат
+│   ├── salary_distribution_by_source.png        # Распределение зарплат по источникам
+│   ├── salary_outliers_by_profession.png        # Выбросы зарплат по профессиям
+│   ├── salary_outliers_by_source.png            # Выбросы зарплат по источникам
+│   ├── statistics.json                          # Общая статистика по вакансиям
+│   ├── top_companies.png                        # Топ компаний по вакансиям
+│   └── README.md                                # Краткое описание
 │
-├── src/                # Исходный код
-│   ├── scrape_hh_api.py          # Скрипт для сбора данных с HeadHunter
-│   ├── scrape_avito_ssr.py       # Скрипт для сбора данных с Авито
-│   ├── scrape_avito_enhanced.py  # Улучшенный скрипт для сбора данных с Авито
-│   ├── analyze_vacancies.py      # Скрипт для базового анализа данных
-│   ├── advanced_data_analysis.py # Скрипт для продвинутого анализа
-│   └── data_cleaning.py          # Скрипт для очистки данных
+├── src/                                     # Исходный код
+│   ├── advanced_data_analysis.py                # Скрипт для продвинутого анализа данных
+│   ├── analyze_vacancies.py                     # Скрипт для базового анализа данных
+│   ├── data_cleaning.py                         # Скрипт для очистки данных
+│   ├── scrape_avito_enhanced.py                 # Улучшенный скрипт для сбора данных с Авито
+│   ├── scrape_avito_ssr.py                      # Скрипт для сбора данных с Авито через SSR
+│   └── scrape_hh_api.py                         # Скрипт для сбора данных с HeadHunter API
 │
-├── requirements.txt    # Зависимости проекта
-├── dataforml.png       # Красота
-└── README.md           # Документация проекта
-```
+├── requirements.txt                         # Зависимости проекта
+├── dataforml.png                            # Красота
+└── README.md                                # Анализ и документация проекта
